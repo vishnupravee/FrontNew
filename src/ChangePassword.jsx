@@ -23,7 +23,7 @@ const ChangePassword = () => {
 
     try {
       const token = localStorage.getItem('token');
-      const res = await axios.put('http://localhost:5000/api/user/change-password', formData, {
+      const res = await axios.put('https://new-task-server-rosy.vercel.app/api/user/change-password', formData, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

@@ -9,7 +9,7 @@ const UserList = () => {
 
   const fetchUsers = async () => {
     try {
-      const res = await axios.get('http://localhost:3000/api/admin/users', {
+      const res = await axios.get('https://new-task-server-rosy.vercel.app/api/admin/users', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setUsers(res.data);

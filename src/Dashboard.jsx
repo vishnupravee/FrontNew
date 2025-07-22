@@ -13,7 +13,7 @@ const Dashboard = () => {
     }
 
     axios
-      .get('http://localhost:3000/api/user/profile', {
+      .get('https://new-task-server-rosy.vercel.app/api/user/profile', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
